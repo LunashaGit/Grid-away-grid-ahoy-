@@ -8,36 +8,6 @@
 body {
   max-width: 1920px;
   background-color: #E6EFF6;
-  display: grid;
-  grid-template-columns: 1fr 7fr;
-}
-
-nav {
-  margin-top: 17%;
-  margin-left: 10%;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-}
-nav ul li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-  border: solid 1px #000;
-  font-family: "Source Sans Pro", sans-serif;
-  border-radius: 3px;
-  background-color: #f1f1f1;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  font-weight: bold;
-  color: #324a9e;
-}
-nav ul li a:hover {
-  transform: scale(1.1);
-  transition: all ease-in-out 0.1s;
 }
 
 section {
@@ -105,10 +75,95 @@ section {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: all 0.1s ease-in-out;
 }
+.card a:hover .card hr {
+  display: none;
+}
 
 img, h2, hr {
   margin-top: 7.5%;
   margin-bottom: 7.5%;
+}
+
+#wrap {
+  font-family: sans-serif;
+  font-size: 21px;
+  line-height: 1.6;
+  margin: 0;
+  position: absolute;
+  color: #f00;
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0.8;
+}
+#wrap svg {
+  filter: invert(100%) sepia(95%) saturate(18%) hue-rotate(339deg) brightness(100%) contrast(106%);
+}
+
+#wrap {
+  transform: translateX(-380px);
+}
+#wrap a:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.1s;
+}
+
+label {
+  height: 44px;
+  text-align: right;
+  display: block;
+  margin-right: -30px;
+}
+
+a,
+label {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-top: 3%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.header {
+  background: white;
+  width: 410px;
+  padding: 0 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.nav {
+  padding: 25px;
+}
+
+.main {
+  padding: 25px;
+  flex: 1;
+  display: inline-block;
+}
+
+svg, span {
+  cursor: pointer;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:checked ~ #wrap {
+  transform: translate3d(0, 0, 0);
+}
+
+label > span {
+  display: none;
+}
+
+#menu:checked ~ #wrap label > span {
+  display: block;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+#menu:checked ~ #wrap label > svg {
+  display: none;
 }
 
 @media screen and (max-width: 1300px) and (min-width: 950px) {
