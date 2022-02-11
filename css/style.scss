@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-$primary-color: #273568;
+$primary-color: #324a9e;
 $second-color: white;
 
 body{
@@ -17,12 +17,14 @@ body{
 }
 
 
-ul {
+nav { 
+    margin-top: 17%;
+    margin-left: 10%;
+    ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 200px;
-    
     li a {
         display: block;
         color: #000;
@@ -32,13 +34,16 @@ ul {
         font-family: 'Source Sans Pro', sans-serif;
         border-radius: 3px;
         background-color: #f1f1f1;
+        box-shadow:  0 4px 8px 0 rgb(0 0 0 / 20%);
+        font-weight: bold;
+        color:  $primary-color;
         &:hover{
             transform: scale(1.1);
             transition: all ease-in-out 0.1s;
         }
       }
   }
-  
+}
   
 
 section{
