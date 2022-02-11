@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+*, *::before, *::after{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+$primary-color: #273568;
+$second-color: white;
+
+section{
+    background-color: #E6EFF6;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto;
+
+}
+
+.card{
+    background-color: #FFF;
+    align-items: center;
+    max-width: 300px;
+    max-height: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin-top: 2.50%;
+    margin-bottom: 2.50%;
+    img{
+        width: 25%;
+        height: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2.50%;
+        margin-bottom: 2.50%;
+    }
+    h2{
+        color:$primary-color;
+    } 
+    hr{
+        border: 1px solid grey;
+        width: 50%;
+    }
+    a{
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 4%;
+        margin-bottom: 7.50%;
+        &:hover{
+            color:$second-color;
+            background-color: #499ed6;
+            border-radius: 25px;
+            
+        }
+    }
+}
+
+img, h2, hr {
+    margin-top: 7.50%;
+    margin-bottom: 7.50%;
+}

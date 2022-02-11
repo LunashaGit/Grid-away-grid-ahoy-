@@ -1,3 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+*, *::before, *::after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
 
+section {
+  background-color: #E6EFF6;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+}
+
+.card {
+  background-color: #FFF;
+  align-items: center;
+  max-width: 300px;
+  max-height: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+.card img {
+  width: 25%;
+  height: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+.card h2 {
+  color: #273568;
+}
+.card hr {
+  border: 1px solid grey;
+  width: 50%;
+}
+.card a {
+  color: #273568;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4%;
+  margin-bottom: 7.5%;
+}
+.card a:hover {
+  color: white;
+  background-color: #499ed6;
+  border-radius: 25px;
+}
+
+img, h2, hr {
+  margin-top: 7.5%;
+  margin-bottom: 7.5%;
+}
 
 /*# sourceMappingURL=style.css.map */
