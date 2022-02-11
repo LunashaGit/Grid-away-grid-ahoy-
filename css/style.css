@@ -70,4 +70,20 @@ img, h2, hr {
   margin-bottom: 7.5%;
 }
 
+@media screen and (max-width: 1300px) and (min-width: 769px) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 769px) and (min-width: 650px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 650px) and (min-width: 100px) {
+  section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
