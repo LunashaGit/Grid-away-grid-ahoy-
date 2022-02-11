@@ -8,6 +8,16 @@
 
 $primary-color: #324a9e;
 $second-color: white;
+@mixin navnone {
+    nav{
+        display:none;
+    }
+}
+@mixin block {
+    body{
+        display:block;
+    }
+}
 
 body{
     max-width: 1920px;
@@ -120,18 +130,25 @@ img, h2, hr {
 }
 
 @media screen and (max-width:1300px) and (min-width:950px) {
+    
     section{
         grid-template-columns: repeat(3, 1fr);
     }
+    @include navnone();
+    @include block();
 }
 
 @media screen and (max-width:950px) and (min-width:650px) {
     section{
         grid-template-columns: repeat(2, 1fr);
     }
+    @include navnone();
+    @include block();
 }
-@media screen and (max-width:650px) and (min-width:100px) {
+@media screen and (max-width:650px) and (min-width:0px) {
     section{
         grid-template-columns: repeat(1, 1fr);
     }
+    @include navnone();
+    @include block();
 }

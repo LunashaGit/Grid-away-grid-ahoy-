@@ -115,15 +115,39 @@ img, h2, hr {
   section {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  nav {
+    display: none;
+  }
+
+  body {
+    display: block;
+  }
 }
 @media screen and (max-width: 950px) and (min-width: 650px) {
   section {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  nav {
+    display: none;
+  }
+
+  body {
+    display: block;
+  }
 }
-@media screen and (max-width: 650px) and (min-width: 100px) {
+@media screen and (max-width: 650px) and (min-width: 0px) {
   section {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  nav {
+    display: none;
+  }
+
+  body {
+    display: block;
   }
 }
 
